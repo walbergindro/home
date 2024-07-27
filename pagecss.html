@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7349bc3776.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logotipo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/page.css">
+    <link rel="stylesheet" href="mob/header.css">
+    <link rel="stylesheet" href="mob/page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Falcon</title>
+</head>
+
+<body>
+
+
+    <style>
+        body{
+            background-color: #1f1f1f;
+        }
+
+        .ativar{
+            display: flex;
+
+
+        }
+     
+        @media (max-width:700px){
+            nav,.fundo-icone,.fundo-logo,
+            .fundo-pesquisaprincipal,.fundo-modulos{
+            display: none;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                overflow-x: hidden;
+            }
+            html{
+                width: 100%;
+    
+            }
+        }
+   
+    </style>
+
+    <header class="menuheader">
+
+        <div class="fundo-header">
+
+            <div class="fundo-menumob">
+                <i class="bi bi-list" id="icone-menumob"></i>
+                
+                <div class="abrir-menu" id="abrir-menu">
+
+                    <div class="fundo-infor-menu">
+                        
+                        <div class="fundo-fechar-abrirmenu">
+                            <p id="logomenu">código falcon</p>
+
+                            <i class="bi bi-x" id="closeheader-menu"></i>
+                        </div>
+                        
+                        <div class="fundo-navmenu">
+                            <a href="manutençao.html" id="dados-navmenu">Cursos</a>
+                            <a href="manutençao.html" id="dados-navmenu">Atividades</a>
+                            <a href="manutençao.html" id="dados-navmenu">Projetos</a>
+                            <a href="manutençao.html" id="dados-navmenu">Blog</a>
+                            <a href="manutençao.html" id="dados-navmenu" class="btn-entrarmenu">Entrar</a>
+                        </div>
+                     
+                    </div>
+                </div>
+
+            </div>
+            <div class="fundo-logomob">
+                <img src="logotipo.png" alt="" id="logomob">
+            </div>
+            <div class="fundo-person">
+                <i class="bi bi-person-fill" id="icone-personmob"></i>
+            </div>
+        </div>
+
+        <div class="fundo-logo">
+            <img src="logotipo.png" alt="" id="logodesk">
+
+        </div>
+
+        <div class="fundo-pesquisaprincipal">
+            <i class="bi bi-search" id="icones-pesquisa"></i>
+            <input type="text" id="input-pesquisa" placeholder="O que Procura ?" >
+            <i class="bi bi-x" id="icone-closeheader"></i>
+
+        </div>
+        
+        <nav>
+            <a href="manutençao.html" id="dados-nav">Cursos</a>
+            <a href="manutençao.html" id="dados-nav">Atividades</a>
+            <a href="manutençao.html" id="dados-nav">Projetos</a>
+            <a href="manutençao.html" id="dados-nav">Blog</a>
+            <a href="manutençao.html" id="dados-nav" class="btn-entrar">Entrar</a>
+        </nav>
+
+    </header>
+
+    <main class="animaçao-page">
+        <div class="fundo-infor">
+            <i class="fa-brands fa-css3-alt" id="img-iconehtml"></i>
+        <p id="titulo-page">" O Preço da Perfeição é a Prática Constante "</p>
+        </div>
+    
+    </main>
+
+    <section class="fundomoduloscurso">
+        <article class="fundo-texto">
+            <p id="titulo-boasvindas">Bem vindo ao Curso de CSS</p>
+            <p id="ajuda-curso">Escolha o módulo que você deseja ver ou rever alguma matéria desse curso .</p>
+            <p id="dicas">Não avança para o próximo módulo sem Praticar o assunto aprendido !!</p>
+           
+
+            <div id="fundo-quadrante">
+                <p id="dicas-quadrante">Veja um resumo da aula nesse quadrante, escolha o módulo que deseja ver para poder ler o resumo</p>
+                <p id="bloco-quadrante"></p>
+            </div>
+
+            <article class="fundo-dicas">
+                <div class="bloco-dicas">
+                    <i class="fa-solid fa-book" id="icone-submaterial"></i>
+                    <p id="titulo-dicas">Anote no caderno</p>
+                </div>
+                <div class="bloco-dicas">
+                    <i class="fa-solid fa-computer" id="icone-submaterial"></i>
+                    <p id="titulo-dicas">Pratique</p>
+                </div>
+                <div class="bloco-dicas">
+                    <i class="fa-solid fa-house-laptop" id="icone-submaterial"></i>
+                    <p id="titulo-dicas">Aperfeiçoa</p>
+                </div>
+            </article>
+        </article>
+
+        <article class="fundo-modulos">
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 25 : Seletor pseudo-classe</summary>
+               
+                <p id="video-cursos" onclick="curso(
+                    'https://player.vimeo.com/video/942077402?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+                    'O que significa Pseudo',
+                    'Estruturas de um pseudo-classe',
+                    'Elemento Ancora',
+                    'Exemplos de aplicação',
+                    ''
+                )"> 
+                <b>25a.</b> Introdução ao pseudo-classe<span id="botao-conclusao"></span></p>
+                
+                <p id="video-cursos" onclick="curso(
+                    'https://player.vimeo.com/video/942083968?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+                    'ddddddddddddddddddddd',
+                    'cccccccccccccccccccccccccccc',
+                    'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+                    'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+                )"><b>25b.</b>pseudo-classe de Ação<span id="botao-conclusao"></span></p>
+            
+
+               <p id="video-cursos" onclick="curso(
+                'https://player.vimeo.com/video/942086141?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+                'ddddddddddddddddddddd',
+                'cccccccccccccccccccccccccccc',
+                'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+                'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+                 )"><b>25b.</b>pseudo-classe de Função<span id="botao-conclusao"></span></p>
+        
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB')">Módulo 21 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 22 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 23 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 24 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 25 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+            <details>
+                <summary id="summary" onclick="textotitulo('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')">Módulo 26 : Conhecendo HTML</summary>
+                <p id="video-cursos" onclick="curso()"> <b>1a.</b> Quais são as areas que eu posso trabalhar com html<span id="botao-conclusao"></span></p>
+                <p id="video-cursos" onclick="curso()"><b>1b.</b>20000<span id="botao-conclusao"></span></p>
+            </details>
+
+        </article>
+
+
+    </section>
+
+
+    <footer>
+        <article class="fundo-logofooter">
+            <img src="codigofonte.png"  id="img-codigofonte" alt="">
+            <p id="copy">2024- código falcon, Todos os direitos Reservados CNPJ:28.154.255/00001-77</p>
+        </article>
+       
+    </footer>
+
+
+    <script src="js/page.js"></script>
+    <script src="js/geral.js"></script>
+
+</body>
+
+</html>

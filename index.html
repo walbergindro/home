@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7349bc3776.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logotipo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/section.css"> 
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="mob/header.css">
+    <link rel="stylesheet" href="mob/main.css">
+    <link rel="stylesheet" href="mob/footer.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Falcon</title>
+</head>
+
+<body>
+
+    <style>
+        body{
+            background:linear-gradient(to top ,  #1f1f1f 100% , #161616 80% );
+        }
+
+        body::-webkit-scrollbar {
+        width: 12px;   
+        background-color: #161616;          
+        }
+        body::-webkit-scrollbar-track {
+        background: #043e47; 
+        transition: 2s;        
+        }
+
+        body::-webkit-scrollbar-thumb {
+        background-color:#009cb8;
+        transition: 2s;  
+        }
+
+        body::-webkit-scrollbar-thumb:hover{
+            background-color: #00ffcc;
+           
+        }
+
+        .ativar{
+            display: flex;
+
+
+        }
+     
+        @media (max-width:700px){
+            nav,.sessao2,.fundo-pagehtml,.fundo-pagehtml2,.fundo-icone,.fundo-logo,
+            .fundo-pesquisaprincipal,.fundo-modulos{
+            display: none;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                overflow-x: hidden;
+            }
+            html{
+                width: 100%;
+    
+            }
+
+            main{
+                width: 100%;
+                height: 1000px;
+                transform: translateY(100px);
+            }
+
+        }
+   
+    </style>
+
+    <header class="menuheader">
+
+        <div class="fundo-header">
+
+            <div class="fundo-menumob">
+                <i class="bi bi-list" id="icone-menumob"></i>
+                
+                <div class="abrir-menu" id="abrir-menu">
+
+                    <div class="fundo-infor-menu">
+                        
+                        <div class="fundo-fechar-abrirmenu">
+                            <p id="logomenu">código falcon</p>
+
+                            <i class="bi bi-x" id="closeheader-menu"></i>
+                        </div>
+                        
+                        <div class="fundo-navmenu">
+                            <a href="manutençao.html" id="dados-navmenu">Cursos</a>
+                            <a href="manutençao.html" id="dados-navmenu">Atividades</a>
+                            <a href="manutençao.html" id="dados-navmenu">Projetos</a>
+                            <a href="manutençao.html" id="dados-navmenu">Blog</a>
+                            <a href="manutençao.html" id="dados-navmenu" class="btn-entrarmenu">Entrar</a>
+                        </div>
+                     
+                    </div>
+                </div>
+
+            </div>
+            <div class="fundo-logomob">
+                <img src="logotipo.png" alt="" id="logomob">
+            </div>
+            <div class="fundo-person">
+                <i class="bi bi-person-fill" id="icone-personmob"></i>
+            </div>
+        </div>
+
+        <div class="fundo-logo">
+            <img src="logotipo.png" alt="" id="logodesk">
+
+        </div>
+
+        <div class="fundo-pesquisaprincipal">
+            <i class="bi bi-search" id="icones-pesquisa"></i>
+            <input type="text" id="input-pesquisa" placeholder="O que Procura ?" >
+            <i class="bi bi-x" id="icone-closeheader"></i>
+
+        </div>
+        
+        <nav>
+            <a href="manutençao.html" id="dados-nav">Cursos</a>
+            <a href="manutençao.html" id="dados-nav">Atividades</a>
+            <a href="manutençao.html" id="dados-nav">Projetos</a>
+            <a href="manutençao.html" id="dados-nav">Blog</a>
+            <a href="manutençao.html" id="dados-nav" class="btn-entrar">Entrar</a>
+        </nav>
+
+    </header>
+
+    <main class="mainmob">
+
+    <div class="fundo-imagem">
+        <img src="imagem.png" alt="" id="imagem-principal">
+
+    </div>
+
+
+    <article class="fundo-cursos">
+
+        <div class="fundo-texto">
+            <div class="fundo-textoprincipal">
+                <p id="texto-curso-principal">Codificando o Futuro !</p>
+            </div>
+           
+            <p id="texto-curso-segundario">Bem-vindos à emocionante jornada da Programação, o mundo digital espera por você.<br> Vamos codificar o futuro juntos!
+                Preparem-se para desafios, descobertas e, acima de tudo, para o incrível sentimento de realização que vem ao transformar linhas de código em algo tangível e incrível.</p>
+        </div>
+
+        <div class="fundo-modulos">
+
+        <div id="bloco-modulo" onclick="irhtml()"><a href="pagehtml.html">
+                <div id="bloco-cima">
+                    <i class="fa-solid fa-code" id="icone-modulo"></i>
+
+                    <p id="titulo-curso">HTML</p>
+                </div>
+                <a href="pagehtml.html" id="comece-curso" >Acessar Curso</a>
+
+        </a></div>
+
+        <div id="bloco-modulo" onclick="ircss()">
+                <div id="bloco-cima">
+                    <i class="fa-brands fa-css3-alt" id="icone-modulo"></i>
+
+                    <p id="titulo-css">CSS</p>
+                </div>
+                <a href="pagecss.html" id="comece-titulo" >Acessar Curso</a>
+
+
+        </div>
+
+        <div id="bloco-modulo" onclick="irjs()">
+                <div id="bloco-cima">
+                    <i class="fa-brands fa-js" id="icone-modulo"></i>
+        
+                    <p id="titulo-js">JS</p>
+                </div>
+                <a href="pagejs.html" id="comece-titulo">Acessar Curso</a>
+        </div>
+
+        <div id="bloco-modulo" onclick="irpro()">
+            <div id="bloco-cima">
+                <i class="fa-solid fa-diagram-project" id="icone-modulo"></i>
+                <p id="titulo-projetos">PROJETOS</p>
+            </div>
+            <p id="comece-titulo">Acessar Curso</p>
+        </div>
+
+
+        </div>
+
+    </article>
+
+    <article class="fundo-cursosmob">
+
+           <div id="bloco-modulomob"  onclick="irhtml()">           
+                <div id="bloco-cimamob">
+                    <i class="fa-solid fa-code" id="icone-modulomob"></i>
+                    <p id="titulo-cursomob">HTML</p>
+                </div>
+                <p id="lembrete-curso">Aprenda a linguagem mais utilizada para o desenvolvimento de Páginas Web</p>
+                <a href="pagehtml.html" id="comece-titulomob">Acessar Curso</a>
+           </div>
+        
+            <div id="bloco-modulomob" onclick="ircss()">
+                <div id="bloco-cimamob">
+                    <i class="fa-brands fa-css3-alt" id="icone-modulomob"></i>
+                    
+                  <p id="titulo-cursomob">CSS</p>
+                </div>
+                <p id="lembrete-curso">Aprenda a linguagem mais utilizada para o desenvolvimento de Páginas Web</p>
+                <a href="pagecss.html" id="comece-titulomob">Acessar Curso</a>
+            </div>
+
+            <div id="bloco-modulomob" onclick="irjs()">
+                <div id="bloco-cimamob">
+                    <i class="fa-brands fa-js" id="icone-modulomob"></i>
+                    <p id="titulo-cursomob">JS</p>
+                </div>
+                <p id="lembrete-curso">Aprenda a linguagem mais utilizada para o desenvolvimento de Páginas Web</p>
+                <a href="pagejs.html" id="comece-titulomob">Acessar Curso</a>
+            </div>
+
+            <div id="bloco-modulomob" onclick="irpro()">
+                <div id="bloco-cimamob">
+                    <i class="fa-solid fa-diagram-project" id="icone-modulomob"></i>
+                    <p id="titulo-cursomob">PROJETOS</p>
+                </div>
+                <p id="lembrete-curso">Aprenda a linguagem mais utilizada para o desenvolvimento de Páginas Web</p>
+                <a href="" id="comece-titulomob">Acessar Curso</a>
+            </div>
+
+    </article>
+
+    <article class="fundo-engrenagem">
+        <i class="fa-solid fa-gear" id="icone-engrenagem"></i>
+    </article>
+
+    </main>
+
+    <section class="fundo-pagehtml">
+
+        <div class="fundo-quadrados">
+
+            <div id="quadranteum"></div>
+            <div id="quadrantedois">
+                <div class="circulo-quadrante"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="sessao2">
+        <div class="fundo-imagem2">
+            <img src="imagem.png" alt="" id="imagem-principal2">
+            <button id="botao-curso">Começar Curso</button>
+    
+        </div>
+
+        
+        <article>
+
+            <div class="fundo-texto2">
+                <div class="fundo-textoprincipal2">
+                    <p id="texto-curso-principal2">Aprenda Html</p>
+                </div>
+               
+                <p id="texto-curso-segundario2">Bem-vindos à emocionante jornada da Programação, o mundo digital espera por você.<br> Vamos codificar o futuro juntos!
+                    Preparem-se para desafios, descobertas e, acima de tudo, para o incrível sentimento de realização que vem ao transformar linhas de código em algo tangível e incrível.</p>
+            </div>
+    
+
+        </article>
+    </section>
+
+    <section class="fundo-pagehtml2">
+
+        <div class="fundo-quadrados2">
+
+            <div id="quadranteum2"></div>
+            <div id="quadrantedois2">
+                <div class="circulo-quadrante2"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="sessao2">
+        <div class="fundo-imagem3">
+            <img src="imagem.png" alt="" id="imagem-principal3">
+            <button id="botao-curso2">Começar Curso</button>
+    
+        </div>
+
+        
+        <article>
+
+            <div class="fundo-texto3">
+                <div class="fundo-textoprincipal3">
+                    <p id="texto-curso-principal3">Aprenda CSS</p>
+                </div>
+               
+                <p id="texto-curso-segundario3">Bem-vindos à emocionante jornada da Programação, o mundo digital espera por você.<br> Vamos codificar o futuro juntos!
+                    Preparem-se para desafios, descobertas e, acima de tudo, para o incrível sentimento de realização que vem ao transformar linhas de código em algo tangível e incrível.</p>
+            </div>
+    
+
+        </article>
+    </section>
+
+    <section class="fundo-pagehtml">
+
+        <div class="fundo-quadrados">
+
+            <div id="quadranteum"></div>
+            <div id="quadrantedois">
+                <div class="circulo-quadrante"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="sessao2">
+        <div class="fundo-imagem4">
+            <img src="imagem.png" alt="" id="imagem-principal4">
+            <button id="botao-curso3">Começar Curso</button>
+    
+        </div>
+
+        
+        <article>
+
+            <div class="fundo-texto4">
+                <div class="fundo-textoprincipal4">
+                    <p id="texto-curso-principal4">Aprenda Java Script</p>
+                </div>
+               
+                <p id="texto-curso-segundario4">Bem-vindos à emocionante jornada da Programação, o mundo digital espera por você.<br> Vamos codificar o futuro juntos!
+                    Preparem-se para desafios, descobertas e, acima de tudo, para o incrível sentimento de realização que vem ao transformar linhas de código em algo tangível e incrível.</p>
+            </div>
+    
+
+        </article>
+    </section>
+
+      
+
+    <footer>
+        <article class="fundo-logofooter">
+            <img src="codigofonte.png"  id="img-codigofonte" alt="">
+            <p id="copy">2024- código falcon, Todos os direitos Reservados CNPJ:28.154.255/00001-77</p>
+        </article>
+       
+    </footer>
+
+    <script src="js/geral.js"></script>
+    
+</body>
+</html>
